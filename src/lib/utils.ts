@@ -1,0 +1,21 @@
+import { type ClassValue, clsx } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
+//for testing purpose
+export async function delayAsyncFunction<T extends (...args: any[]) => Promise<any>>(asyncFunction: T,delay=1000): Promise<ReturnType<T>> {
+  return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(asyncFunction());
+      }, delay);
+    });
+}
+
+export function formatDate(date:string) {
+  return new Intl.DateTimeFormat('en-US').format(new Date(date))
+}
+
+
