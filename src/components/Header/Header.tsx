@@ -6,17 +6,24 @@ import LocalSwitcher from "./LocaleSwitcher";
 import styles from "./styles.module.css";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
-import NestedLink from "./NestedLink"
+import NestedLink from "./NestedLink";
+import Image from "next/image";
 
 const Header = () => {
   const t = useTranslations("links");
   const router = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-secondary-200/95 backdrop-blur-[2px] text-gray-900 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-primary-50/95 backdrop-blur-[2px] text-gray-900 shadow-lg">
       <div className="max-w-screen-xl flex flex-row justify-between items-center px-3 md:px-12 mx-auto">
         <LocaleLink href="/" className="flex items-center">
-          Logo
+          <Image
+            height={100}
+            width={100}
+            src={"/logo.png"}
+            alt="Logo"
+            className="object-contain object-center h-16 w-16"
+          />
         </LocaleLink>
         <div className="lg:flex flex-row md:gap-4 lg:gap-8 hidden">
           {navigation.map((item) => {
@@ -29,11 +36,10 @@ const Header = () => {
                     {t(item.id)}
                   </span>
                 </LocaleLink>
-              )
+              );
             }
-            return <NestedLink urlObject={item.url} />
-          }
-          )}
+            return <NestedLink key={item.id} urlObject={item.url} />;
+          })}
         </div>
         <div className="flex gap-4">
           <LocalSwitcher />
@@ -121,13 +127,11 @@ function MobileNav() {
                   {t(item.id)}
                 </span>
               </LocaleLink>
-            )
+            );
           }
-          return <NestedLink urlObject={item.url} />
-        }
-        )}
+          return <NestedLink key={item.id} urlObject={item.url} />;
+        })}
       </div>
     </div>
   );
 }
-
