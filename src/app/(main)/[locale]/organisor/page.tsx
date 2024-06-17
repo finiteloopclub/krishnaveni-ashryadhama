@@ -30,7 +30,7 @@ export default function organisor() {
         <div
           className={`absolute bg-gradient-to-t from-black/75 from-25% to-transparent w-full h-3/5 bottom-0 pointer-events-none`}
         ></div>
-        <ScrollDown />
+        <ScrollDown targetId="bddfk"/>
       </div>
       <section className="content-container flex flex-col md:gap-4 gap-2 ">
         <div className="flex flex-row gap-2 ">
