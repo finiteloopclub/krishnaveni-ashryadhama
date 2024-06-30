@@ -37,7 +37,9 @@
     "rulesRegulations": "ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
     "pricing": "ಬೆಲೆ",
     "krishnaveni": "ಕೃಷ್ಣವೇಣಿ",
-    "organisation": "ಆಡಳಿತ"
+    "organisation": "ಆಡಳಿತ",
+    "therapyInformation": "ಚಿಕಿತ್ಸೆಯ ಮಾಹಿತಿ",
+    "therapyTariff": "ಚಿಕಿತ್ಸೆಯ ಸುಂಕ"
   },
   "ayurvedicCenter": {
     "heading": "ಆಯುರ್ವೇದ ಕೇಂದ್ರ",
@@ -61,6 +63,24 @@
     "table": {
       "title": "ಶೀರ್ಷಿಕೆ",
       "detail": "ವಿವರ"
+    }
+  },
+  "therapyinfo": {
+    "heading": "ಥೆರಪಿ ಮಾಹಿತಿ",
+    "table": {
+      "title": "ಶೀರ್ಷಿಕೆ",
+      "detail": "ವಿವರ",
+      "days": "ದಿನಗಳು",
+      "package": "ಪ್ಯಾಕೇಜ್"
+    }
+  },
+  "tariff": {
+    "heading": "ವೈಯಕ್ತಿಕ ಚಿಕಿತ್ಸಾ ಶುಲ್ಕಗಳು: (ಔಷಧಿಗಳನ್ನು ಹೊರತುಪಡಿಸಿ)",
+    "table": {
+      "procedure": "ವಿಧಾನ",
+      "duration": "ಅವಧಿ",
+      "charges": "ಶುಲ್ಕಗಳು",
+      "discount": "ರಿಯಾಯಿತಿ"
     }
   },
   "aboutUs": {
@@ -90,8 +110,8 @@
     "content": "ವೈವಿಧ್ಯಮಯ ಪ್ರತಿಭೆಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ ಅದ್ಭುತ ಯಶಸ್ಸನ್ನು ತರುತ್ತದೆ",
     "Trustee": "ಟ್ರಸ್ಟಿಗಳು",
     "faculty": "ಸಿಬ್ಬಂದಿಗಳು",
-    "doctor":"ವೈದ್ಯರು",
-    "knowMore":"ಹೆಚ್ಚು ತಿಳಿಯಿರಿ"
+    "doctor": "ವೈದ್ಯರು",
+    "knowMore": "ಹೆಚ್ಚು ತಿಳಿಯಿರಿ"
   },
   "resources": {
     "rulesRegulations": "ನಿಯಮಗಳು ಮತ್ತು ನಿಬಂಧನೆಗಳು",
